@@ -26,11 +26,12 @@ export default function TextForm(props) {
     <div className='container'>   
         <h1>{props.heading}</h1>
         <div className="mb-3">
-        <textarea className="form-control" id="myBox" value={text} rows="5" onChange={handleOnChange} placeholder="Enter your text..."></textarea>
-        </div>
+        <textarea className="form-control my-3" id="myBox" value={text} rows="5" onChange={handleOnChange} placeholder="Enter your text..."></textarea>
         <div className="btn btn-primary" onClick={handleUpClick}>Convert to UPPERCASE</div>
-        <div className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to lowercase</div>
+        <div className="btn btn-primary" onClick={handleLoClick}>Convert to lowercase</div>
         <div className="btn btn-primary" onClick={handleClrClick}>Clear Text</div>
+        </div>
+        
     </div>
     <div className="container my-5">
 
